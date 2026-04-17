@@ -3,17 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de login</title>
+    <title>Página de login</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
-        <div>
-            <h1>Faça login para entrar na nossa página</h1>
+        <div id="visual">
+            <h1 id="titulo">Faça login para entrar <br> na nossa página</h1>
             <img src="img/undraw_authentication_1evl.svg" alt="svg">
         </div>
+            
+        <div id="login-box">
+            <h1 id="titulo-box">LOGIN</h1>
+            <div class="box">
+                <label for="usuario">Usuário</label>
+                <p><input type="email" name="txtmail" id="usuario" placeholder="Usuário"></p>
+            </div>
+            <div class="box">
+                <label for="senha">Senha</label>
+                <p><input type="password" name="senha" id="senha" placeholder="Senha"></p>
+            </div>
 
-        <div></div>
+            <div class="box">
+                <p id="lembrar">
+                    <input type="checkbox" name="checkbox" id="checkbox"> <label for="checkbox">lembre-se de mim</label>
+                </p>
+                <p id="esqueci" onclick="alert('Recuperação de senha')">
+                    Esqueceu a senha?
+                </p>
+
+                <p id="saida">Login realizado com sucesso!</p>
+            </div>
+
+            <div class="box">
+                <input type="button" value="LOGIN">
+            </div>
+
+            
+
+            
+        </div>
       </main>
 </body>
 </html>
