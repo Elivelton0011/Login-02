@@ -15,28 +15,31 @@
             
         <div id="login-box">
             <h1 id="titulo-box">LOGIN</h1>
-            <div class="box">
-                <label for="usuario">Usuário</label>
-                <p><input type="email" name="txtmail" id="usuario" placeholder="Usuário"></p>
-            </div>
-            <div class="box">
-                <label for="senha">Senha</label>
-                <p><input type="password" name="senha" id="senha" placeholder="Senha"></p>
+            <div id="entrada">
+                <div>
+                    <label class="sub" for="usuario">Usuário</label>
+                    <p><input type="email" name="txtmail" id="usuario" placeholder="Usuário"></p>
+                </div>
+                <div>
+                    <label class="sub" for="senha">Senha</label>
+                    <p><input type="password" name="senha" id="senha" placeholder="Senha"></p>
+                </div>
             </div>
 
-            <div class="box">
+            <div id="box">
                 <p id="lembrar">
                     <input type="checkbox" name="checkbox" id="checkbox"> <label for="checkbox">lembre-se de mim</label>
                 </p>
+
                 <p id="esqueci" onclick="alert('Recuperação de senha')">
-                    Esqueceu a senha?
+                    Esqueceu a senha
                 </p>
 
-                <p id="saida">Login realizado com sucesso!</p>
+                <p  id="saida">Login realizado com sucesso!</p>
             </div>
 
-            <div class="box">
-                <input type="button" value="LOGIN">
+            <div>
+                <input id="butao" type="button" value="LOGIN">
             </div>
 
             
