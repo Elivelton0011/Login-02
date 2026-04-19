@@ -13,39 +13,40 @@
             <img src="img/undraw_authentication_1evl.svg" alt="svg">
         </div>
             
-        <div id="login-box">
-            <h1 id="titulo-box">LOGIN</h1>
-            <div id="entrada">
-                <div>
-                    <label class="sub" for="usuario">Usuário</label>
-                    <p><input type="email" name="txtmail" id="usuario" placeholder="Usuário@email"></p>
-                </div>
-                <div>
-                    <label class="sub" for="senha">Senha</label>
-                    <p><input type="password" name="senha" id="senha" placeholder="Senha"></p>
-                </div>
-            </div>
-
-            <div id="box">
-                <p id="lembrar">
-                    <input type="checkbox" name="checkbox" id="checkbox"> <label for="checkbox">lembre-se de mim</label>
-                </p>
-
-                <p id="esqueci" onclick="alert('Recuperação de senha')">
-                    Esqueceu a senha
-                </p>
-
-                <p  id="saida">Login realizado com sucesso!</p>
-            </div>
-
-            <div id="buttom">
-                <input id="butao" type="button" value="LOGIN">
-            </div>
-
             
 
+                
+                
+              <form id="login-box">
+                  <h1 id="titulo-box">LOGIN</h1>
+                   <div id="entrada">
+                       <div>
+                           <label class="sub" for="usuario">Usuário</label>
+                           <p><input type="email" name="mail" id="usuario" placeholder="Usuário@email" required></p>
+                       </div>
+                       <div>
+                           <label class="sub" for="senha">Senha</label>
+                           <p><input type="password" name="senha" id="senha" placeholder="Senha" required></p>
+                       </div>
+                   </div>
+                   <p  id="saida"></p>
+                   <div id="box">
+                       <p id="lembrar">
+                           <input type="checkbox" name="checkbox" id="checkbox"> <label for="checkbox">lembre-se de mim</label>
+                       </p>
+                       <p id="esqueci" onclick="alert('Recuperação de senha')">
+                           Esqueceu a senha
+                       </p>
+                   </div>
+                   <div id="buttom">
+                       <input id="butao" type="button" value="LOGIN" onclick="login()">
+                   </div>
+              </form>
+
             
-        </div>
+        
       </main>
+
+      <script src="script/script.js"></script>
 </body>
 </html>
