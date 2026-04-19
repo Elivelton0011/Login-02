@@ -72,14 +72,16 @@ img{
 #entrada{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
 }
 
 .sub{
+    display: block;
     color: var(--subtextos);
     font-size: 15pt;
     font-weight: bold;
     padding-left: 15px;
+    padding-bottom: 10px;
 }
 
 
@@ -108,6 +110,7 @@ input:focus{
     justify-content: space-between;
     width: 400px;
     color: var(--subtextos);
+    margin-top: -25px;
     
 }
 
@@ -138,6 +141,11 @@ input:focus{
     text-decoration: underline;
     cursor: pointer;
     user-select: none;
+}
+
+#buttom{
+    margin-top: -35px;
+    padding-bottom: 40px;
 }
 
 #butao{
